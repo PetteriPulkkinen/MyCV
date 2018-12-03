@@ -1,7 +1,7 @@
 #container {
     display: table;
     margin: auto;
-    width: 85%;
+    width: 98%;
     border: 5px solid #000000;
 }
 
@@ -39,6 +39,7 @@
     padding-right: 15px;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
+    margin-bottom: 15px;
 }
 
 .text_column > h2 {

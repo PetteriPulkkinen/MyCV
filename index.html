@@ -1,102 +1,132 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>CV: Petteri Pulkkinen</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="lp.js"></script>
-        <link rel="stylesheet" type="text/css" href="cv_style.css">
-    </head>
-    <body>
-        <div id="container">
-            <div id="skills">
-                <div id="personal_info" class="skill_column">
-                    <h1>Petteri Pulkkinen</h1>
-                    <img src="picture.jpg"/>
-                    <p><b>Student</b></p>
-                    <h2>Personal Info</h2>
-                    <p><b>Address</b></p>
-                    <p>Vaasankatu 10 202</p>
-                    <p>00500 Helsinki</p>
-                    <p><b>Phone</b></p>
-                    <p>+358 50 911 5720</p>
-                    <p><b>E-mail</b></p>
-                    <p>petteri.pulkkinen@aalto.fi</p>
-                    <p><b>Date of birth</b></p>
-                    <p>22-01-1995</p>
-                    <p><b>GitHub</b></p>
-                    <p><a href="https://github.com/PetteriPulkkinen">https://github.com/PetteriPulkkinen</a></p>
-                    <p><b>LinkedIn</b></p>
-                    <p><a href="https://www.linkedin.com/in/petteri-pulkkinen-12a900146/">https://www.linkedin.com/in/petteri-pulkkinen-12a900146/</a></p>
+<html lang="en">
+<head>
+  <title>CV: Petteri Pulkkinen</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
 
-                </div>
-                <div id="programing_skills" class="skill_column">
-                    <h2>Programming skills</h2>
-                    <p>Python</p>
-                    <progress value="5" max="5"></progress>
-                    <p>MATLAB</p>
-                    <progress value="5" max="5"></progress>
-                    <p>C++</p>
-                    <progress value="4" max="5"></progress>
-                    <p>GIT</p>
-                    <progress value="4" max="5"></progress>
-                    <p>Jenkins</p>
-                    <progress value="3" max="5"></progress>
-                    <p>C#</p>
-                    <progress value="3" max="5"></progress>
-                    <p>C</p>
-                    <progress value="3" max="5"></progress>
-                    <p>Groovy</p>
-                    <progress value="1" max="5"></progress>
-                </div>
-                <div id="languages" class="skill_column">
-                    <h2>Languages</h2>
-                    <p>Finnish - native</p>
-                    <p>English - fluent</p>
-                </div>
-            </div>
-            <div id="text">
-                <div id="description" class="text_column">
-                    <h1>Overview</h1>
-                    <p>
-                        An MSc student interested in signal processing, machine learning, and programming. Recently graduated from Electronics and Electrical Engineering bachelor's studies with +1 year of experience in automated software testing. At the moment studying Signal Processing and Data Science to strengthen abilities to work with modern signal processing and machine learning technologies. Seeking for a job to apply skills learned in master's studies and possibilities to do master's thesis later on the studies.
-                    </p>
-                </div>
-                <div id="experience" class="text_column">
-                    <h1>Experience</h1>
-                    <h2>ABB Oy, Software testing trainee</h2>
-                    <p class="when">11.2017 - present</p>
-                    <p>
-                        Working as a part of a scrum team in embedded software testing team. Responsibilities include development and maintenance of continuous integration infra. In practice, the infra is hosted by <b>Jenkins</b> server which is using scripts written by <b>Python</b> and <b>Groovy</b>. The test cases are implemented using <b>MSTest</b> based framework and using <b>C#</b> programming language. The job also included test setup designing and constructing.
-                    </p>
-                </div>
-                <div id="education" class="text_column">
-                    <h1>Education</h1>
-                    <h2>Aalto-yliopisto, Electronics and Electrical Engineerig, Computer Science, Bachelor's degree</h2>
-                    <p class="when">09.2014 - 12.2018</p>
-                    <p>
-                        Major studies introduced basic analog and digital circuit design skills to be able to analyze system stability and understand frequency and time domain behavior. Circuit simulations are done by using <b>LTSpice</b> and PCB design by using <b>KiCad</b>. Compulsory courses included programming languages such as <b>Python</b> and <b>C</b>. The computer science minor introduced basic knowledge about <b>software engineering</b>, <b>data structures</b>, <b>algorithms</b> and, <b>databases</b>. Programming is done mainly by using <b>C++</b> and <b>Python</b>. Optional courses included <b>digital signal processing</b> where <b>MATLAB</b> and <b>C++</b> are used to implement the algorithms. Bachelor's thesis about room response equalization using digital adaptive filters is related to the digital signal processing area.
-                    </p>
-                    <h2>Aalto-yliopisto, Signal Processing and Data Science, Master's degree</h2>
-                    <p class="when">09.2018 - present</p>
-                    <p>
-                        The degree will merge <b>machine learning</b>, <b>signal processing</b> and <b>statistics</b> to be able to work with modern signal processing algorithms and <b>large-scale data</b>. In the major studies, signal processing is mainly applied for communications. However, acoustics and <b>audio signal processing</b> is optionally included in the study plan. In addition, <b>embedded real-time systems</b> are studied to understand hardware implementations and operating systems.
-                    </p>
-                </div>
-                <div id="additional_experience" class="text_column">
-                    <h1>Additional Activities</h1>
-                    <h2>Tarnanen Oy</h2>
-                    <p class="when">Artist</p>
-                    <p>
-                        Acting as a part-time musician on gigs provided by Tarnanen Oy booking agency.
-                    </p>
-                    <h2>Sony Music Finland Oy</h2>
-                    <p class="when">Recording artist</p>
-                    <p>
-                        Recording contract via Finnish rock band called Tiisu.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </body>
+<div class="container">
+  <div class="row bg-light p-2">
+      <div class="col-sm-2">
+          <img src="picture.jpg" class="img-fluid img-thumbnail border border-dark">
+          <p class="mt-2"><b>Student</b></p>
+      </div>
+      <div class="col-sm-10">
+          <h1>Petteri Pulkkinen</h1>
+          <p><i>Age 23 (22.01.1995)</i></p>
+          <p>
+              An MSc student interested in signal processing, machine learning, and programming. Recently graduated from Electronics and Electrical Engineering bachelor's studies with +1 year of experience in automated software testing. At the moment studying Signal Processing and Data Science to strengthen abilities to work with modern signal processing and machine learning technologies. Seeking for a job to apply skills learned in master's studies and possibilities to do master's thesis later on the studies.
+          </p>
+      </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-3 p-2">
+      <h3>Skills</h3>
+      <div>
+          <p>Python</p>
+          <div class="progress border">
+              <div class="progress-bar bg-dark" style="width:90%"></div>
+          </div><br>
+          <p>MATLAB</p>
+          <div class="progress border">
+              <div class="progress-bar bg-dark" style="width:90%"></div>
+          </div><br>
+          <p>DSP</p>
+          <div class="progress border">
+              <div class="progress-bar bg-dark" style="width:90%"></div>
+          </div><br>
+          <p>C++</p>
+          <div class="progress border">
+              <div class="progress-bar bg-dark" style="width:80%"></div>
+          </div><br>
+          <p>GIT</p>
+          <div class="progress border">
+              <div class="progress-bar bg-dark" style="width:80%"></div>
+          </div><br>
+          <p>Jenkins</p>
+          <div class="progress border">
+              <div class="progress-bar bg-dark" style="width:70%"></div>
+          </div><br>
+          <p>C#</p>
+          <div class="progress border">
+              <div class="progress-bar bg-dark" style="width:60%"></div>
+          </div><br>
+          <p>C</p>
+          <div class="progress border">
+              <div class="progress-bar bg-dark" style="width:60%"></div>
+          </div><br>
+          <p>Groovy</p>
+          <div class="progress border">
+              <div class="progress-bar bg-dark" style="width:30%"></div>
+          </div><br>
+      </div>
+      <h3>Languages</h3>
+      <div>
+          <p>Finnish - native</p>
+          <p>English - fluent</p>
+      </div>
+    </div>
+    <div class="col-sm-9 p-2">
+      <div>
+          <h3>Experience</h3>
+          <h5>ABB Oy, Software testing trainee</h5>
+          <p>11.2017 - present</p>
+          <p>
+              Working as a part of a scrum team in embedded software testing team. Responsibilities include development and maintenance of continuous integration infra. In practice, the infra is hosted by <b>Jenkins</b> server which is using scripts written by <b>Python</b> and <b>Groovy</b>. The test cases are implemented using <b>MSTest</b> based framework and using <b>C#</b> programming language. The job also included test setup designing and constructing.
+          </p>
+      </div>
+      <div>
+          <h3>Education</h3>
+          <h5>Aalto-yliopisto, Signal Processing and Data Science, Master's degree</h5>
+          <p>09.2018 - present</p>
+          <p>
+              The degree will merge <b>machine learning</b>, <b>signal processing</b> and <b>statistics</b> to be able to work with modern signal processing algorithms and <b>large-scale data</b>. In the major studies, signal processing is mainly applied for communications. However, acoustics and <b>audio signal processing</b> is optionally included in the study plan. In addition, <b>embedded real-time systems</b> are studied to understand hardware implementations and operating systems.
+          </p>
+          <h5>Aalto-yliopisto, Electronics and Electrical Engineerig, Computer Science, Bachelor's degree</h5>
+          <p>09.2014 - 12.2018</p>
+          <p>
+              Major studies introduced basic analog and digital circuit design skills to be able to analyze system stability and understand frequency and time domain behavior. The computer science minor introduced basic knowledge about <b>software engineering</b>, <b>data structures</b>, <b>algorithms</b> and, <b>databases</b>. Optional courses included for example <b>digital signal processing</b>.
+          </p>
+      </div>
+      <div>
+          <h3>Additional Activities</h3>
+          <h5>Tarnanen Oy, Artist</h5>
+          <p>
+              Acting as a part-time musician on gigs provided by Tarnanen Oy booking agency.
+          </p>
+          <h5>Sony Music Finland Oy, Recording artist</h5>
+          <p>
+              Recording contract via Finnish rock band called Tiisu.
+          </p>
+      </div>
+    </div>
+  </div>
+  <div class="row bg-light p-2">
+      <div class="col-sm-4">
+          <h6>Address</h6>
+          <p>Vaasankatu 10 202</p>
+          <p>00500 Helsinki</p>
+      </div>
+      <div class="col-sm-4">
+          <h6>Contact</h6>
+          <p>+358 50 911 5720</p>
+          <p>petteri.pulkkinen@aalto.fi</p>
+      </div>
+      <div class="col-sm-4">
+          <h6>Other</h6>
+          <p><a href="https://github.com/PetteriPulkkinen">https://github.com/PetteriPulkkinen</a></p>
+          <p><a href="https://www.linkedin.com/in/petteri-pulkkinen-12a900146/">https://www.linkedin.com/in/petteri-pulkkinen-12a900146/</a></p>
+      </div>
+  </div>
+</div>
+
+</body>
 </html>
